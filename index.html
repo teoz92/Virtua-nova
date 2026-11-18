@@ -1,0 +1,11 @@
+<!doctype html>
+<html lang="it"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#101827"><link rel="manifest" href="manifest.webmanifest"><link rel="stylesheet" href="style.css"><title>VIRTUA · NOVA</title></head>
+<body><header><div><small>MONDO AUTONOMO · PROTOTIPO</small><h1>VIRTUA <span>NOVA</span></h1></div><div class="status"><i></i> SIMULAZIONE LOCALE</div></header>
+<main><section class="hero"><div><p class="eyebrow">INSEDIAMENTO 001</p><h2>Una civiltà<br>in costruzione.</h2><p class="muted">20 abitanti · bisogni · relazioni · risorse</p></div><div class="day"><small>GIORNO</small><strong id="day">1</strong></div></section>
+<section class="stats" id="stats"></section>
+<section class="panel"><div class="sectionhead"><h3>La città</h3><span id="weather">Sereno</span></div><div class="town"><div class="sun"></div><div class="building hall">ASSEMBLEA</div><div class="building workshop">OFFICINA</div><div class="tree t1">♣</div><div class="tree t2">♣</div><div class="path"></div><div class="townlabel">NOVA · PIAZZA CENTRALE</div></div></section>
+<section class="panel"><div class="sectionhead"><h3>Abitanti</h3><span id="count">20 presenti</span></div><div id="people" class="people"></div></section>
+<section class="panel"><div class="sectionhead"><h3>Registro della città</h3><span>EVENTI</span></div><div id="log" class="log"></div></section>
+<div class="actions"><button id="advance">Avanza di 1 giorno</button><button class="secondary" id="advance30">+30 giorni</button></div>
+<p class="foot">Prototipo dimostrativo: gli abitanti usano comportamenti simulati locali. Non sono ancora IA generative autonome e i dati restano su questo dispositivo.</p></main>
+<script src="app.js"></script><script>if('serviceWorker' in navigator) navigator.serviceWorker.register('./sw.js');</script></body></html>
